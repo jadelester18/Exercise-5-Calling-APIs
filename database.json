@@ -1,0 +1,66 @@
+{
+  "user": [
+    {
+      "email": "admin",
+      "password": "admin"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "My Title 2",
+      "description": "Description 2",
+      "author": "First Author",
+      "comments": {
+        "0": "comment 1"
+      },
+      "id": 1
+    },
+    {
+      "title": "asd",
+      "description": "asd",
+      "author": "asd",
+      "comments": {
+        "0": ""
+      },
+      "id": 2
+    },
+    {
+      "title": "zxc",
+      "description": "zxc",
+      "author": "zxc",
+      "comments": {
+        "0": ""
+      },
+      "id": 3
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "My Title 2",
+      "name": "Description 2",
+      "authors": {
+        "0": "comment 1"
+      },
+      "isbn": "First Author"
+    },
+    {
+      "id": 2,
+      "title": "asd",
+      "name": "asd",
+      "authors": {
+        "0": "comment 2"
+      },
+      "isbn": "asd"
+    },
+    {
+      "id": 3,
+      "title": "zxc",
+      "name": "zxc",
+      "authors": {
+        "0": "comment 3"
+      },
+      "isbn": "zxc"
+    }
+  ]
+}

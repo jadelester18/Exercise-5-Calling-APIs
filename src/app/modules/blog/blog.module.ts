@@ -1,29 +1,29 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BlogRoutingModule } from './blog-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BlogFormComponent } from './pages/blog-form/blog-form.component';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+
+import { HttpClientModule } from '@angular/common/http';
+import { BlogListComponent } from './pages/blog-list/blog-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [BlogFormComponent, BlogListComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    BlogRoutingModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -31,10 +31,10 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MatPaginatorModule,
     MatSortModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class BlogModule {}
